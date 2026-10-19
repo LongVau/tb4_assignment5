@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Humble / Fast DDS 2.6: bypass shared-memory transport on WSL2.
+     Keep ROS QoS defaults; RMW_FASTRTPS_USE_QOS_FROM_XML is not required. -->
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <transport_descriptors>
+    <transport_descriptor>
+      <transport_id>assignment5_udp</transport_id>
+      <type>UDPv4</type>
+    </transport_descriptor>
+  </transport_descriptors>
+  <participant profile_name="assignment5_udp_participant" is_default_profile="true">
+    <rtps>
+      <userTransports>
+        <transport_id>assignment5_udp</transport_id>
+      </userTransports>
+      <useBuiltinTransports>false</useBuiltinTransports>
+    </rtps>
+  </participant>
+</profiles>

@@ -1,0 +1,17 @@
+# 3 locations from RViz > Publish Point; Fixed Frame = map.
+# Select three DIFFERENT, FREE areas at a safe distance from walls.
+# yaw is the robot heading in radians (0 means +X; 1.5708 means +Y).
+# No sample coordinates are invented: replace null with your measured values.
+goals:
+  - name: Goal 1
+    x: -2.4
+    y: 1.6
+    yaw: 0.0
+  - name: Goal 2
+    x: -2.4
+    y: -2.4
+    yaw: 0.0
+  - name: Goal 3
+    x: -6.0
+    y: -5.0
+    yaw: 0.0

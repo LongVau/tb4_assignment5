@@ -1,0 +1,4 @@
+# For ROS 2 Humble system Python (Ubuntu 22.04).
+# Keep NumPy 1.x for typical apt cv_bridge and system OpenCV ABI compatibility.
+numpy<2
+ultralytics>=8.0,<9.0
